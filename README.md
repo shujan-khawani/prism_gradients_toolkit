@@ -5,6 +5,15 @@
 
 A beautiful Flutter package that provides stunning, customizable gradient UI components with smooth animations. Transform your app's interface with vibrant gradient buttons, avatars, text fields, containers, and text widgets that bring your design to life!
 
+## 📱 Screenshots
+
+<div align="center">
+  <img src="assets/Screenshot 1.png" alt="Prism Gradients Toolkit Demo 1" width="300"/>
+  <img src="assets/Screenshot 2.png" alt="Prism Gradients Toolkit Demo 2" width="300"/>
+</div>
+
+*Beautiful gradient components in action - see how they transform your app's interface!*
+
 ## ✨ Features
 
 - 🎨 **5 Beautiful Gradient Components**:
@@ -19,6 +28,8 @@ A beautiful Flutter package that provides stunning, customizable gradient UI com
 - 🎨 **Fully Customizable** - Control colors, durations, sizes, and more
 - 📱 **Modern Design** - Perfect for contemporary app interfaces
 - ⚡ **Performance Optimized** - Efficient animations that won't slow down your app
+
+> **See it in action!** Check out the screenshots above to see how these beautiful gradient components can transform your app's interface.
 
 ## 🚀 Getting Started
 
