@@ -6,12 +6,22 @@ class AnimatedGradientButton extends StatefulWidget {
   final double width;
   final double height;
 
+  /// User-defined gradient color inputs
+  final Color color1Begin;
+  final Color color1End;
+  final Color color2Begin;
+  final Color color2End;
+
   const AnimatedGradientButton({
     super.key,
     required this.text,
     required this.onPressed,
     this.width = 200,
     this.height = 50,
+    this.color1Begin = Colors.deepOrange,
+    this.color1End = Colors.purple,
+    this.color2Begin = Colors.teal,
+    this.color2End = Colors.cyanAccent,
   });
 
   @override
@@ -33,12 +43,13 @@ class _AnimatedGradientButtonState extends State<AnimatedGradientButton>
     )..repeat(reverse: true);
 
     _color1 = ColorTween(
-      begin: Colors.deepOrange,
-      end: Colors.purple,
+      begin: widget.color1Begin,
+      end: widget.color1End,
     ).animate(_controller);
+
     _color2 = ColorTween(
-      begin: Colors.teal,
-      end: Colors.cyanAccent,
+      begin: widget.color2Begin,
+      end: widget.color2End,
     ).animate(_controller);
   }
 
@@ -57,8 +68,8 @@ class _AnimatedGradientButtonState extends State<AnimatedGradientButton>
               borderRadius: BorderRadius.circular(30),
               gradient: LinearGradient(
                 colors: [
-                  _color1.value ?? Colors.orange,
-                  _color2.value ?? Colors.teal,
+                  _color1.value ?? widget.color1Begin,
+                  _color2.value ?? widget.color2Begin,
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
