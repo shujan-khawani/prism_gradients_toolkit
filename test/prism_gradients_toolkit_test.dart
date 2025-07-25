@@ -10,13 +10,13 @@ void main() {
   group('AnimatedGradientContainer', () {
     testWidgets('renders and animates gradient correctly', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: AnimatedGradientContainer(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             startColors: [Colors.red, Colors.blue],
             endColors: [Colors.green, Colors.yellow],
-            child: const Text('Gradient Container'),
+            child: Text('Gradient Container'),
           ),
         ),
       );
@@ -45,7 +45,7 @@ void main() {
   group('AnimatedGradientTextField', () {
     testWidgets('renders gradient animated border', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             body: AnimatedGradientTextField(
               beginColor: Colors.pink,
@@ -63,7 +63,7 @@ void main() {
   group('AnimatedGradientAvatar', () {
     testWidgets('renders animated gradient avatar', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             body: Center(
               child: AnimatedGradientAvatar(
@@ -72,7 +72,7 @@ void main() {
                 endColor1: Colors.blue,
                 beginColor2: Colors.green,
                 endColor2: Colors.yellow,
-                child: const Icon(Icons.person),
+                child: Icon(Icons.person),
               ),
             ),
           ),
