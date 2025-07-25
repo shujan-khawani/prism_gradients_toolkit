@@ -1,9 +1,9 @@
 name: prism_gradients_toolkit
 description: "prism_gradients_toolkit is a Flutter package that provides beautiful, customizable gradient UI components like buttons, avatars, textfields and containers. Great for modern apps that want a vibrant, eye-catching design. Just plug and play!"
 version: 0.0.1
-homepage: https://github.com/yourusername/prism_gradients_toolkit
-repository: https://github.com/yourusername/prism_gradients_toolkit
-issue_tracker: https://github.com/yourusername/prism_gradients_toolkit/issues
+homepage: https://github.com/shujan-khawani/prism_gradients_toolkit
+repository: https://github.com/shujan-khawani/prism_gradients_toolkit
+issue_tracker: https://github.com/shujan-khawani/prism_gradients_toolkit/issues
 
 topics:
   - flutter
