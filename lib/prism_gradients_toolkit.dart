@@ -1,5 +1,3 @@
-library prism_gradients_toolkit;
-
 // Export your widgets here
 export 'src/gradient avatar/gradient_avatar.dart';
 export 'src/gradient button/gradient_button.dart';

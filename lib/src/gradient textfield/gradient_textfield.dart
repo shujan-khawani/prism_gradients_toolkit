@@ -13,7 +13,7 @@ class AnimatedGradientTextField extends StatefulWidget {
   });
 
   @override
-  _AnimatedGradientTextFieldState createState() =>
+  State<AnimatedGradientTextField> createState() =>
       _AnimatedGradientTextFieldState();
 }
 

@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   prism_gradients_toolkit:
-    path: ../
+    path: ../ # For development - change to ^0.0.1 when published
 
 dev_dependencies:
   flutter_test:
