@@ -5,6 +5,7 @@ class AnimatedGradientButton extends StatefulWidget {
   final VoidCallback onPressed;
   final double width;
   final double height;
+  final double radius;
 
   /// User-defined gradient color inputs
   final Color color1Begin;
@@ -22,6 +23,7 @@ class AnimatedGradientButton extends StatefulWidget {
     this.color1End = Colors.purple,
     this.color2Begin = Colors.teal,
     this.color2End = Colors.cyanAccent,
+    this.radius = 30,
   });
 
   @override
@@ -65,7 +67,7 @@ class _AnimatedGradientButtonState extends State<AnimatedGradientButton>
             height: widget.height,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(widget.radius),
               gradient: LinearGradient(
                 colors: [
                   _color1.value ?? widget.color1Begin,
